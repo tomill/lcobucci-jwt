@@ -1,5 +1,5 @@
 {
-    "name": "lcobucci/jwt",
+    "name": "tomill/lcobucci-jwt",
     "description": "A simple library to work with JSON Web Token and JSON Web Signature",
     "type": "library",
     "authors": [
@@ -17,15 +17,21 @@
         "BSD-3-Clause"
     ],
     "require": {
-        "php": "^7.4 || ^8.0",
+        "php": "^7.2 || ^8.0",
         "ext-mbstring": "*",
         "ext-openssl": "*",
-        "lcobucci/clock": "^2.0"
+        "tomill/lcobucci-clock": "dev-2.0.0-tempfix@dev"
     },
     "require-dev": {
         "mikey179/vfsstream": "^1.6",
-        "phpunit/phpunit": "^9.4"
+        "phpunit/phpunit": "8.5.33"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/tomill/lcobucci-clock"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Lcobucci\\JWT\\": "src"
