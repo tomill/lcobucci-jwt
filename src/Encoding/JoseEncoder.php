@@ -15,7 +15,6 @@ use function json_encode;
 use function rtrim;
 use function strtr;
 
-use const JSON_THROW_ON_ERROR;
 use const JSON_UNESCAPED_SLASHES;
 use const JSON_UNESCAPED_UNICODE;
 
@@ -30,7 +29,7 @@ final class JoseEncoder implements Encoder, Decoder
     public function jsonEncode($data): string
     {
         try {
-            return json_encode($data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_THROW_ON_ERROR);
+            return json_encode($data, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
         } catch (JsonException $exception) {
             throw CannotEncodeContent::jsonIssues($exception);
         }
@@ -40,7 +39,7 @@ final class JoseEncoder implements Encoder, Decoder
     public function jsonDecode(string $json)
     {
         try {
-            return json_decode($json, true, self::JSON_DEFAULT_DEPTH, JSON_THROW_ON_ERROR);
+            return json_decode($json, true, self::JSON_DEFAULT_DEPTH);
         } catch (JsonException $exception) {
             throw CannotDecodeContent::jsonIssues($exception);
         }
