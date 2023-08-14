@@ -9,9 +9,9 @@ use PHPUnit\Framework\TestCase;
 /** @coversDefaultClass \Lcobucci\JWT\Token\Plain */
 final class PlainTest extends TestCase
 {
-    private DataSet $headers;
-    private DataSet $claims;
-    private Signature $signature;
+    private $headers;
+    private $claims;
+    private $signature;
 
     /** @before */
     public function createDependencies(): void

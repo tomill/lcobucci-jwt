@@ -19,10 +19,10 @@ use PHPUnit\Framework\TestCase;
 final class BuilderTest extends TestCase
 {
     /** @var Encoder&MockObject */
-    private Encoder $encoder;
+    private $encoder;
 
     /** @var Signer&MockObject */
-    private Signer $signer;
+    private $signer;
 
     /** @before */
     public function initializeDependencies(): void

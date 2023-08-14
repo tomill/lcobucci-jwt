@@ -13,7 +13,7 @@ use function hash_hmac;
 final class HmacTest extends TestCase
 {
     /** @var Hmac&MockObject */
-    protected Hmac $signer;
+    protected $signer;
 
     /** @before */
     public function initializeDependencies(): void

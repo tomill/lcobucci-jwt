@@ -18,13 +18,13 @@ use function in_array;
 final class Builder implements BuilderInterface
 {
     /** @var array<string, mixed> */
-    private array $headers = ['typ' => 'JWT', 'alg' => null];
+    private $headers = ['typ' => 'JWT', 'alg' => null];
 
     /** @var array<string, mixed> */
-    private array $claims = [];
+    private $claims = [];
 
-    private Encoder $encoder;
-    private ClaimsFormatter $claimFormatter;
+    private $encoder;
+    private $claimFormatter;
 
     public function __construct(Encoder $encoder, ClaimsFormatter $claimFormatter)
     {

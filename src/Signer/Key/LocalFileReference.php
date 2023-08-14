@@ -13,8 +13,8 @@ final class LocalFileReference implements Key
 {
     private const PATH_PREFIX = 'file://';
 
-    private string $path;
-    private string $passphrase;
+    private $path;
+    private $passphrase;
 
     private function __construct(string $path, string $passphrase)
     {

@@ -13,7 +13,7 @@ use RuntimeException;
 final class ParserTest extends TestCase
 {
     /** @var Decoder&MockObject */
-    protected Decoder $decoder;
+    protected $decoder;
 
     /** @before */
     public function createDependencies(): void

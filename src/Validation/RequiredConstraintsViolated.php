@@ -12,7 +12,7 @@ use function implode;
 final class RequiredConstraintsViolated extends RuntimeException implements Exception
 {
     /** @var ConstraintViolation[] */
-    private array $violations = [];
+    private $violations = [];
 
     public static function fromViolations(ConstraintViolation ...$violations): self
     {

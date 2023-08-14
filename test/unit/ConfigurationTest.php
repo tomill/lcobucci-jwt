@@ -25,22 +25,22 @@ use PHPUnit\Framework\TestCase;
 final class ConfigurationTest extends TestCase
 {
     /** @var Parser&MockObject */
-    private Parser $parser;
+    private $parser;
 
     /** @var Signer&MockObject */
-    private Signer $signer;
+    private $signer;
 
     /** @var Encoder&MockObject */
-    private Encoder $encoder;
+    private $encoder;
 
     /** @var Decoder&MockObject */
-    private Decoder $decoder;
+    private $decoder;
 
     /** @var Validator&MockObject */
-    private Validator $validator;
+    private $validator;
 
     /** @var Constraint&MockObject */
-    private Constraint $validationConstraints;
+    private $validationConstraints;
 
     /** @before */
     public function createDependencies(): void

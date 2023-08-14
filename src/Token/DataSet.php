@@ -8,8 +8,8 @@ use function array_key_exists;
 final class DataSet
 {
     /** @var array<string, mixed> */
-    private array $data;
-    private string $encoded;
+    private $data;
+    private $encoded;
 
     /** @param mixed[] $data */
     public function __construct(array $data, string $encoded)

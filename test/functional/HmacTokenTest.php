@@ -35,7 +35,7 @@ use function assert;
  */
 class HmacTokenTest extends TestCase
 {
-    private Configuration $config;
+    private $config;
 
     /** @before */
     public function createConfiguration(): void

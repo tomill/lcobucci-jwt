@@ -11,7 +11,7 @@ use PHPUnit\Framework\TestCase;
 final class ValidatorTest extends TestCase
 {
     /** @var Token&MockObject */
-    private Token $token;
+    private $token;
 
     /** @before */
     public function createDependencies(): void

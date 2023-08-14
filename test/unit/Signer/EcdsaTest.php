@@ -22,7 +22,7 @@ final class EcdsaTest extends TestCase
 {
     use Keys;
 
-    private MultibyteStringConverter $pointsManipulator;
+    private $pointsManipulator;
 
     /** @before */
     public function createDependencies(): void

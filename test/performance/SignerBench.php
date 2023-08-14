@@ -19,10 +19,10 @@ abstract class SignerBench
                           . " and if you don't keep your feet, there\xe2\x80\x99s no knowing where you might be swept"
                           . ' off to.';
 
-    private Signer $signer;
-    private Key $signingKey;
-    private Key $verificationKey;
-    private string $signature;
+    private $signer;
+    private $signingKey;
+    private $verificationKey;
+    private $signature;
 
     final public function init(): void
     {

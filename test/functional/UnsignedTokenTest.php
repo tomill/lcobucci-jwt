@@ -42,7 +42,7 @@ class UnsignedTokenTest extends TestCase
 {
     public const CURRENT_TIME = 100000;
 
-    private Configuration $config;
+    private $config;
 
     /** @before */
     public function createConfiguration(): void

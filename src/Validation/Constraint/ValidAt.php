@@ -12,8 +12,8 @@ use Lcobucci\JWT\Validation\ConstraintViolation;
 
 final class ValidAt implements Constraint
 {
-    private Clock $clock;
-    private DateInterval $leeway;
+    private $clock;
+    private $leeway;
 
     public function __construct(Clock $clock, ?DateInterval $leeway = null)
     {

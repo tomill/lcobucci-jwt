@@ -5,8 +5,8 @@ namespace Lcobucci\JWT\Token;
 
 final class Signature
 {
-    private string $hash;
-    private string $encoded;
+    private $hash;
+    private $encoded;
 
     public function __construct(string $hash, string $encoded)
     {

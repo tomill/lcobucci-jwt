@@ -10,9 +10,9 @@ use function in_array;
 
 final class Plain implements TokenInterface
 {
-    private DataSet $headers;
-    private DataSet $claims;
-    private Signature $signature;
+    private $headers;
+    private $claims;
+    private $signature;
 
     public function __construct(
         DataSet $headers,

@@ -13,7 +13,7 @@ use Lcobucci\JWT\Validation\ConstraintViolation;
 /** @coversDefaultClass \Lcobucci\JWT\Validation\Constraint\ValidAt */
 final class ValidAtTest extends ConstraintTestCase
 {
-    private Clock $clock;
+    private $clock;
 
     /** @before */
     public function createDependencies(): void

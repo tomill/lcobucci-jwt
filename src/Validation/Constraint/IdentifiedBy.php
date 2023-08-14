@@ -9,7 +9,7 @@ use Lcobucci\JWT\Validation\ConstraintViolation;
 
 final class IdentifiedBy implements Constraint
 {
-    private string $id;
+    private $id;
 
     public function __construct(string $id)
     {

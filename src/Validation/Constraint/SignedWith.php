@@ -10,8 +10,8 @@ use Lcobucci\JWT\Validation\ConstraintViolation;
 
 final class SignedWith implements Constraint
 {
-    private Signer $signer;
-    private Signer\Key $key;
+    private $signer;
+    private $key;
 
     public function __construct(Signer $signer, Signer\Key $key)
     {

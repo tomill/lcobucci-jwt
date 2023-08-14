@@ -10,7 +10,7 @@ use Lcobucci\JWT\Validation\ConstraintViolation;
 final class IssuedBy implements Constraint
 {
     /** @var string[] */
-    private array $issuers;
+    private $issuers;
 
     public function __construct(string ...$issuers)
     {

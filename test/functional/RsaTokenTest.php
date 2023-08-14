@@ -42,7 +42,7 @@ class RsaTokenTest extends TestCase
 {
     use Keys;
 
-    private Configuration $config;
+    private $config;
 
     /** @before */
     public function createConfiguration(): void

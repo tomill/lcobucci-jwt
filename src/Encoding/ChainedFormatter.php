@@ -8,7 +8,7 @@ use Lcobucci\JWT\ClaimsFormatter;
 final class ChainedFormatter implements ClaimsFormatter
 {
     /** @var list<ClaimsFormatter> */
-    private array $formatters;
+    private $formatters;
 
     public function __construct(ClaimsFormatter ...$formatters)
     {
